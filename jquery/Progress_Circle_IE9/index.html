@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <link rel="stylesheet" href="percircle.css" />
+</head>
+<body>
+    <div id="demo" 
+        data-text="Custom Text" 
+        data-percent="70" 
+        class="red big">
+    </div>
+    <script src="percircle.js"></script>
+    <script>
+        $("#demo").percircle({
+            perdown: true,
+            secs: 14,
+            timeUpText: 'finally!',
+            reset: true,
+            // more options here
+        });
+    </script>
+</body>
+</html>
